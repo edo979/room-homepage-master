@@ -3,7 +3,7 @@
 
   grid-template:
     repeat(5, auto)
-    / minmax(25px, 3rem) 1fr minmax(25px, 3rem);
+    / minmax(25px, 3rem) minmax(325px, 60ch) minmax(25px, 3rem);
 }
 
 .hero_img,
