@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+
+  grid-template:
+    repeat(5, auto)
+    / minmax(25px, 3rem) 1fr minmax(25px, 3rem);
+}
+
+.hero_img,
+.main-nav {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.hero_text-content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.footer_dark-img {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+.footer_text-content {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+.footer_light-img {
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
+}
