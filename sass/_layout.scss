@@ -22,12 +22,6 @@
 .footer_dark-img {
   grid-column: 1 / 4;
   grid-row: 3 / 4;
-
-  > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 260px;
-  }
 }
 .footer_text-content {
   grid-column: 2 / 3;
@@ -36,4 +30,16 @@
 .footer_light-img {
   grid-column: 1 / 4;
   grid-row: 5 / 6;
+}
+
+.footer_light-img,
+.footer_dark-img {
+  height: 260px;
+}
+
+// Images
+img[class*='-img'] {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
