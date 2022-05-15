@@ -1,5 +1,45 @@
 .main-nav {
-  position: relative;
-  display: none;
-  z-index: 3;
+  margin-top: 1rem;
+  z-index: 1;
+
+  .logo {
+    margin-inline: auto;
+  }
+
+  &_list {
+    --justify: end;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    list-style: none;
+    background-color: white;
+
+    transform: translateX(-100%);
+  }
+
+  &_toggle {
+    position: absolute;
+    margin-left: 25px;
+    margin-right: auto;
+    z-index: 3;
+  }
+}
+
+@include mq {
+  .main-nav {
+    &_list {
+      position: relative;
+      transform: translateX(0);
+
+      background-color: transparent;
+    }
+    &_toggle {
+      display: none;
+    }
+  }
 }
