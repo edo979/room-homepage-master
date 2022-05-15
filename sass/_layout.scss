@@ -3,7 +3,7 @@
 
   grid-template:
     repeat(5, auto)
-    / minmax(25px, 3rem) minmax(325px, 60ch) minmax(25px, 3rem);
+    / minmax(25px, 1fr) minmax(250px, 50ch) minmax(25px, 1fr);
 
   place-content: center;
 }
