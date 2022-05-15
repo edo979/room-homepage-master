@@ -19,6 +19,14 @@
   grid-row: 2 / 3;
 }
 
+.slider_nav {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+
+  place-self: end;
+  z-index: 1;
+}
+
 .footer_dark-img {
   grid-column: 1 / 4;
   grid-row: 3 / 4;
@@ -66,6 +74,11 @@ img[class*='-img'] {
   .hero_text-content {
     grid-column: 3 / 5;
     grid-row: 1 / 2;
+  }
+
+  .slider_nav {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
   }
 
   .footer_dark-img {

@@ -7,10 +7,46 @@
   }
 }
 
+.slider {
+  &_nav {
+    width: 112px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: black;
+
+    > * {
+      flex-basis: 100%;
+
+      img {
+        margin-inline: auto;
+        height: 15px;
+        width: 10px;
+      }
+    }
+  }
+}
+
 @include mq {
   .hero {
     &_img {
       background-image: url(../images/desktop-image-hero-1.jpg);
+    }
+  }
+
+  .slider {
+    &_nav {
+      height: 100%;
+      width: 100%;
+
+      > * {
+        img {
+          height: 30px;
+          width: 15px;
+        }
+      }
     }
   }
 }
