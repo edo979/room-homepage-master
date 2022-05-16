@@ -26,16 +26,20 @@
   </head>
   <body>
     <div class="grid-container">
-      <nav class="main-nav flex">
+      <div class="main-nav flex">
         <div class="logo"><img src="images/logo.svg" alt="" /></div>
-        <ul class="main-nav_list flex">
-          <li><a href="#" class="main-nav_link">Home</a></li>
-          <li><a href="#" class="main-nav_link">Shop</a></li>
-          <li><a href="#" class="main-nav_link">About</a></li>
-          <li><a href="#" class="main-nav_link">Contact</a></li>
-        </ul>
-        <button class="main-nav_toggle"></button>
-      </nav>
+        <nav
+          class="main-nav_list flex"
+          id="main-nav-lis"
+          aria-label="Main navigation"
+        >
+          <a href="#" class="main-nav_link" aria-current="location">Home</a>
+          <a href="#" class="main-nav_link">Shop</a>
+          <a href="#" class="main-nav_link">About</a>
+          <a href="#" class="main-nav_link">Contact</a>
+        </nav>
+        <button class="main-nav_toggle" aria-controls="main-nav-list"></button>
+      </div>
 
       <article class="footer_text-content">
         <h1>About our furniture</h1>
@@ -49,7 +53,7 @@
         </p>
       </article>
 
-      <nav class="slider_nav">
+      <nav class="slider_nav" aria-hidden="true">
         <div id="slider_left">
           <img src="./images/icon-angle-left.svg" alt="" />
         </div>
