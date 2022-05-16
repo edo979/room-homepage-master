@@ -63,6 +63,11 @@ img[class*='-img'] {
   max-height: 100%;
 }
 
+// Utility
+.hidden {
+  display: none;
+}
+
 @include mq {
   .grid-container {
     max-width: 1440px;
