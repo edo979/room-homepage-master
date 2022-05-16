@@ -15,7 +15,8 @@
   place-content: center;
 }
 
-.hero_img {
+.hero_img,
+.main-nav {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
 }
@@ -72,9 +73,14 @@ img[class*='-img'] {
       minmax(250px, 1fr) 1fr 160px minmax(250px, 1.05fr);
   }
 
-  .hero_img {
+  .hero_img,
+  .main-nav {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+  }
+
+  .main-nav {
+    place-self: start;
   }
 
   .hero_text-content {

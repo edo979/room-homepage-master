@@ -8,15 +8,14 @@
   &_list {
     --justify: end;
     position: absolute;
+    width: 100%;
     margin: 0;
     padding: 2rem 1rem;
-
-    width: 100%;
 
     list-style: none;
     background-color: white;
 
-    //transform: translateX(-100vw);
+    transform: translateX(-100vw);
 
     &::before {
       content: '';
@@ -32,19 +31,24 @@
 
   &_toggle {
     position: absolute;
-    left: 25px;
+    left: max(25px, 10vw);
     z-index: 3;
   }
 }
 
 @include mq {
   .main-nav {
-    position: absolute;
-    width: 1440px;
-    margin-left: auto;
+    --gap: 4rem;
+    --justify: start;
+    position: relative;
+    padding-left: min(4rem, 5vw);
 
     &_list {
+      --gap: 1rem;
       position: relative;
+      width: auto;
+      padding-inline: 0;
+
       transform: translateX(0);
 
       background-color: transparent;
@@ -53,6 +57,7 @@
         content: none;
       }
     }
+
     &_toggle {
       display: none;
     }
