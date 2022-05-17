@@ -2,8 +2,11 @@ const imageEls = document.querySelectorAll('.hero_img'),
   textContentEls = document.querySelectorAll('.hero_text-content'),
   leftBtn = document.getElementById('slider_left'),
   rightBtn = document.getElementById('slider_right'),
-  slidesTotal = imageEls.length
+  slidesTotal = imageEls.length,
+  navTogglerEl = document.querySelector('.main-nav_toggle'),
+  navListEl = document.querySelector('.main-nav_list')
 
+// Slider
 let currentSlide = 1
 
 rightBtn.addEventListener('click', (e) => {
@@ -32,3 +35,8 @@ function toggleHidden() {
   imageEls[index].classList.toggle('hidden')
   textContentEls[index].classList.toggle('hidden')
 }
+
+// Navigation
+navTogglerEl.addEventListener('click', (e) =>
+  navListEl.classList.toggle('expanded')
+)
