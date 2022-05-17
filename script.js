@@ -1,15 +1,34 @@
-const sliderImgEl = document.querySelector('.hero_img'),
-  sliderTextContentEl = document.querySelector('.hero_text-content'),
+const imageEls = document.querySelectorAll('.hero_img'),
+  textContentEls = document.querySelectorAll('.hero_text-content'),
   leftBtn = document.getElementById('slider_left'),
-  rightBtn = document.getElementById('slider_right')
+  rightBtn = document.getElementById('slider_right'),
+  slidesTotal = imageEls.length
 
 let currentSlide = 1
 
 rightBtn.addEventListener('click', (e) => {
+  toggleHidden()
   currentSlide++
 
-  if (currentSlide > 3) {
+  if (currentSlide > slidesTotal) {
     currentSlide = 1
   }
-  console.log(currentSlide)
+  toggleHidden()
 })
+
+leftBtn.addEventListener('click', (e) => {
+  toggleHidden()
+  currentSlide--
+
+  if (currentSlide < 1) {
+    currentSlide = slidesTotal
+  }
+  toggleHidden()
+})
+
+function toggleHidden() {
+  const index = currentSlide - 1
+
+  imageEls[index].classList.toggle('hidden')
+  textContentEls[index].classList.toggle('hidden')
+}
