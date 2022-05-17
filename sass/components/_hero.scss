@@ -6,6 +6,11 @@
       object-fit: cover;
     }
   }
+
+  &_img,
+  &_text-content {
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 
 .slider {
@@ -20,6 +25,9 @@
 
     > * {
       flex-basis: 100%;
+      padding: 1rem 0;
+
+      cursor: pointer;
 
       img {
         margin-inline: auto;
@@ -37,6 +45,7 @@
       width: 100%;
 
       > * {
+        padding: 0.5rem 0;
         img {
           height: 30px;
           width: 15px;
