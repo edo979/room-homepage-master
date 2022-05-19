@@ -7,6 +7,10 @@
     }
   }
 
+  &_text-content {
+    margin-block: 6rem;
+  }
+
   &_img,
   &_text-content {
     transition: opacity 0.5s ease-in-out;

@@ -1,2 +1,8 @@
 @import 'nav';
 @import 'hero';
+
+.footer {
+  &_text-content {
+    margin-block: 4rem;
+  }
+}
