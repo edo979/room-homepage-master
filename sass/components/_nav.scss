@@ -22,6 +22,7 @@
   }
 
   &_link {
+    position: relative;
     font-size: var(--fs-300);
     font-weight: 700;
 
@@ -98,6 +99,20 @@
 
     &_link {
       color: $White;
+
+      &:hover,
+      &:focus {
+        &:after {
+          content: '';
+          position: absolute;
+          left: 20%;
+          bottom: -6px;
+          width: 60%;
+          height: 2px;
+
+          background-color: $White;
+        }
+      }
     }
 
     &_toggle {
