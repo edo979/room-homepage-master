@@ -4,7 +4,7 @@ const imageEls = document.querySelectorAll('.hero_img'),
   rightBtn = document.getElementById('slider_right'),
   slidesTotal = imageEls.length,
   navTogglerEl = document.querySelector('.main-nav_toggle'),
-  navListEl = document.querySelector('.main-nav_list')
+  navListEl = document.querySelector('.main-nav')
 
 // Slider
 let currentSlide = 1
