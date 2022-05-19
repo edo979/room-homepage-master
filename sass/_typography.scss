@@ -29,6 +29,15 @@ h2,
   letter-spacing: 6px;
 }
 
+h1,
+.h1,
+h2,
+.h2 {
+  color: $Black;
+}
+
 p {
   font-size: var(--fs-400);
+
+  color: $Dark-Gray;
 }
