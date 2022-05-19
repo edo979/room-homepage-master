@@ -11,6 +11,29 @@
   &_text-content {
     transition: opacity 0.5s ease-in-out;
   }
+
+  &_link {
+    position: relative;
+
+    font-size: var(--fs-700);
+    font-weight: 700;
+    letter-spacing: 16px;
+
+    color: $Black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: 0;
+      width: 40px;
+      height: 12px;
+
+      background-image: url(../images/icon-arrow.svg);
+    }
+  }
 }
 
 .slider {

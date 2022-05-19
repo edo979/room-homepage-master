@@ -2,6 +2,7 @@
 
 :root {
   --fs-900: 3.5rem;
+  --fs-700: 1.3rem;
   --fs-600: 1.25rem;
   --fs-400: 1.4rem;
 }
@@ -25,7 +26,6 @@ h2,
 .h2 {
   font-size: var(--fs-600);
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 6px;
 }
 
@@ -40,4 +40,10 @@ p {
   font-size: var(--fs-400);
 
   color: $Dark-Gray;
+}
+
+// Utility
+
+.text-uppercase {
+  text-transform: uppercase;
 }
