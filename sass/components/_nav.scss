@@ -7,6 +7,7 @@
 
   &_list {
     --justify: end;
+    --gap: 2rem;
     position: absolute;
     width: 100%;
     margin: 0;
@@ -18,6 +19,16 @@
     transform: translateX(-100vw);
 
     transition: transform 0.25s ease-in-out;
+  }
+
+  &_link {
+    font-size: var(--fs-300);
+    font-weight: 700;
+
+    text-transform: lowercase;
+    text-decoration: none;
+
+    color: $Black;
   }
 
   &_toggle {
