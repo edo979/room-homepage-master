@@ -68,6 +68,14 @@
 }
 
 @include mq {
+  .hero {
+    &_text-content {
+      place-self: center;
+      margin: 0 2rem;
+      margin-block: 0;
+      max-width: 60ch;
+    }
+  }
   .slider {
     &_nav {
       height: 100%;

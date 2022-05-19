@@ -77,11 +77,13 @@
     --gap: 4rem;
     --justify: start;
     position: relative;
+    padding: 5rem 0 0;
     padding-left: min(4rem, 5vw);
 
     &_list {
-      --gap: 1rem;
+      --gap: 2.5rem;
       position: relative;
+      padding: 0;
       width: auto;
       padding-inline: 0;
 
@@ -92,6 +94,10 @@
       &::before {
         content: none;
       }
+    }
+
+    &_link {
+      color: $White;
     }
 
     &_toggle {

@@ -6,3 +6,13 @@
     margin-block: 4rem;
   }
 }
+
+@include mq {
+  .footer {
+    &_text-content {
+      place-self: center;
+      margin: 0 1rem;
+      max-width: 70ch;
+    }
+  }
+}

@@ -48,3 +48,15 @@ p {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+@include mq {
+  :root {
+    --fs-900: 4.25rem;
+    --fs-600: 1.35rem;
+    --fs-400: 1.3rem;
+  }
+
+  body {
+    line-height: 1.4;
+  }
+}
