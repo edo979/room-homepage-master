@@ -20,6 +20,7 @@
     position: relative;
     display: inline-block;
     margin-top: 2.5rem;
+    z-index: 5;
 
     font-size: var(--fs-700);
     font-weight: 700;
@@ -33,11 +34,22 @@
       content: '';
       position: absolute;
       right: -40px;
-      top: 0;
+      top: 3px;
       width: 40px;
       height: 12px;
 
-      background-image: url(../images/icon-arrow.svg);
+      background-image: url('data:image/svg+xml; utf8, <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="%23000" fill-rule="nonzero"/></svg>');
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $Dark-Gray;
+      border: none;
+      outline: none;
+
+      &::after {
+        background-image: url('data:image/svg+xml; utf8, <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="%23a1a1a1" fill-rule="nonzero"/></svg>');
+      }
     }
   }
 }
@@ -50,13 +62,21 @@
     display: flex;
     align-items: center;
 
-    background-color: black;
+    background-color: $Black;
 
     > * {
       flex-basis: 100%;
-      padding: 1rem 0;
+      height: 100%;
+      border: none;
+      padding: 0;
+      background-color: transparent;
 
       cursor: pointer;
+
+      &:hover,
+      &:focus-visible {
+        background-color: $Very-Dark-Gray;
+      }
 
       img {
         margin-inline: auto;
@@ -82,7 +102,6 @@
       width: 100%;
 
       > * {
-        padding: 0.5rem 0;
         img {
           height: 30px;
           width: 15px;
