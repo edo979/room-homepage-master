@@ -68,6 +68,12 @@ img[class*='-img'] {
   opacity: 0;
 }
 
+.flow {
+  > * + * {
+    margin-top: var(--flow-gap, 1rem);
+  }
+}
+
 @include mq {
   .grid-container {
     max-width: 1440px;

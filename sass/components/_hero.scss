@@ -14,6 +14,8 @@
 
   &_link {
     position: relative;
+    display: inline-block;
+    margin-top: 2.5rem;
 
     font-size: var(--fs-700);
     font-weight: 700;
